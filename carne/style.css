@@ -38,3 +38,136 @@ body {
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
+
+.nazev {
+    font-family: 'Raleway';
+    font-size: 1.75rem;
+    font-weight: 800;
+    position: absolute;
+    bottom:0;
+    word-wrap: break-word;
+    color: white;
+}
+
+.podnazev {
+    font-size: 0,8rem;
+    font-weight: 400;
+    color: white;
+}
+
+.komentar {
+    font-size: 0,8rem;
+    font-weight: 400;
+    color: white;
+}
+
+.malynazev{
+    font-family: 'Raleway';
+    font-size: 1.2rem;
+    font-weight: 800;
+    position: absolute;
+    bottom:0;
+    word-wrap: break-word;
+    color: white;
+}
+
+.container {
+display:flex;
+flex-wrap: wrap;
+flex-direction: column;
+padding: 0.5rem;
+}
+
+.recept {
+padding: 0.5rem;
+display: flex;
+position: relative;
+border: 1px solid white;
+justify-content: space-between;
+}
+
+.hlavni {
+min-height: 200px;
+background: url("images/burger.jpg") no-repeat center;
+background-size: cover;
+background-position: center;
+}
+
+.dva {
+background: url("images/sushi.jpg") no-repeat center;
+background-size: cover;
+background-position: center;
+}
+
+.tri {
+background: url("images/rajcata.jpg") no-repeat center;
+background-size: cover;
+background-position: center;
+}
+
+.styri {
+background: url("images/kure.jpg") no-repeat center;
+background-size: cover;
+background-position: center;
+}
+
+.pet {
+background: url("images/grilovani.jpg") no-repeat center;
+background-size: cover;
+background-position: center;
+} 
+
+
+@media (min-width: 480px) {
+.hlavni {
+    min-height: 250px;
+    width: 100%;
+}
+    
+.maly {
+    min-height: 150px;
+    width: 50%;
+}
+.recept {
+    padding: 1.25rem;
+}
+.nazev {
+    font-size: 2rem;
+}
+.malynazev{
+    font-size: 1.5rem;
+}
+.container {
+    flex-direction: row;
+}
+}
+
+@media (min-width: 860px) {
+.hlavni {
+    height: 400px;
+    width: 33.33%;
+    float: left;
+}
+.maly {
+    height: 200px;
+    width: 33.33%;
+}
+.recept {
+    padding: 1.25rem;
+}
+.nazev {
+    font-size: 3rem;
+}
+.malynazev {
+    font-size: 1.75rem;
+ }
+.container {
+    display: block;
+}
+.dva {
+    float:left;
+}
+.styri {
+    float:left;
+}
+}
